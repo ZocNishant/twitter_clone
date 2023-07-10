@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Josefin  Sans", sans-serif;
+    outline: none;
 }
 
 html {
@@ -49,4 +50,141 @@ body {
     font-size: 2rem;
 }
 /* end of left */
+
+/* right */
+.right {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+.right-content-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.right-content-form div {
+    position: relative;
+}
+
+.right-content-form input {
+    width: 20rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: .1rem solid  #ddd;
+    border-radius: .5rem;
+    background-color: #fff;
+    transition: backgroud-color .3s;
+}
+
+.right-content-form input:focus {
+    background-color: #d9e2f7;
+}
+
+.right-content-form label {
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #a7a6a6;
+    cursor: pointer;
+}
+
+.btn-top {
+    width: 8rem;
+    background-color: #fff;
+    color: #1aa1f5;
+    border: .1rem solid  #1aa1f5;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.btn-top:hover {
+    background-color: #d9ebf7;
+}
+
+.middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.middle-content i {
+    font-size: 4rem;
+    color: #1aa1f5;
+    margin-bottom: 2rem;
+}
+
+.middle-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+}
+
+.middle-content h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.middle-content button {
+    margin: .8rem 0;
+    padding: .5rem;
+    border: .1rem solid #1aa1f5;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.signup {
+    background-color: #1aa1f5;
+    color: white;
+}
+
+.signup:hover {
+    background-color: #0f5d8d;
+}
+
+.login {
+    background-color: #fff;
+}
+
+.login:hover {
+    background-color: #d9ebf7;
+}
+/* end of right */
+
+.main-page-footer {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    background-color: #f5f4f4;
+    padding: 1.5rem;
+    border-top: .1rem solid #ddd;
+}
+
+.main-page-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.main-page-footer a {
+    font-size: 1.6rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: 300;
+}
+/* end of footer */
 /* end of main page */
